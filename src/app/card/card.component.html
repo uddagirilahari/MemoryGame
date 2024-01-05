@@ -1,0 +1,14 @@
+
+
+<!-- card.component.html -->
+
+<div class="card" [class.flipped]="isFlipped || isMatched" [class.matched]="isMatched" (click)="onCardClick()">
+    <div class="card-inner">
+      <div class="front">?</div>
+      <img *ngIf="isFlipped || isMatched" [src]="value" alt="Card Image">
+
+    </div>
+  </div>
+
+  
+  
